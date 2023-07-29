@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Article Styles */
+.article {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Additional Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+}
