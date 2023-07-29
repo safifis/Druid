@@ -59,4 +59,10 @@ a:hover {
     header {
         padding: 0.5rem;
     }
+
+    /* Article Styles */
+    .article {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
