@@ -1,32 +1,65 @@
+/* Header Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
-/* Header Styles */
-header {
-    padding: 1rem;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
+.header__icon img {
+    max-width: 50px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.header__search input[type="text"] {
+    padding: 8px 8px 8px 40px; /* Added padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
 }
 
 /* Article Styles */
-.article {
+
+main {
     padding-left: 25%;
     padding-right: 25%;
 }
 
-main {
-    padding: 2rem;
-}
-
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
+}
+.article-header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
 }
 
 h2 {
@@ -34,26 +67,102 @@ h2 {
     margin-bottom: 1.2rem;
 }
 
-p {
+.article p {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: Times, serif;
+}
+
+/* Container for the entire profile */
+.profile {
+    display: flex; /* Display the profile picture and info side by side */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Container for the profile picture */
+.profile-pic {
+    width: 50px; /* Set the desired width and height for the circular picture */
+    height: 50px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide the parts of the image outside the circle */
+    /* border: 1px solid #ccc; Add a border */
+    display: flex; /* Use flex display to center the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    margin-right: 10px; /* Add some spacing between the picture and info */
+}
+
+/* Style for the image inside the circular container */
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the profile information */
+.profile-info {
+    flex: 1; /* Allow the info to take remaining space */
+}
+
+/* Style for the profile name */
+.profile-name {
+    font-size: 18px;
+    margin: 0; /* Remove default margins */
 }
 
 ul {
     list-style: none;
+    line-height: 1.5;
     padding-left: 0;
     margin-bottom: 1.5rem;
 }
 
-/* Additional Styles */
-a {
-    color: #007bff;
-    text-decoration: none;
+a:link {
+    text-decoration: none !important;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Change the color as needed */
+    margin: 20px 0; /* Adjust spacing as needed */
+}
+
+/* Style for links in the navigation */
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #00a2ff; /* Change link color */
+    font-weight: bold; /* Add some weight to the font */
+}
+
+/* Change link color on hover */
 a:hover {
-    text-decoration: underline;
+    color: #555;
 }
 
+/* Footer Style */
+.footer {
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+.footer__links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: #333;
+}
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     header {
