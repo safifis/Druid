@@ -9,7 +9,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #ffffff;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -55,11 +54,21 @@ h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
+
+.article-header {
+    text-align: left;
+}
+
 .article-header p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     line-height: 1.5;
     font-family: Arial, sans-serif;
+}
+
+.article-header img {
+    width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -119,6 +128,7 @@ ul {
 
 a:link {
     text-decoration: none !important;
+    color: #034694;
 }
 
 hr {
@@ -128,9 +138,9 @@ hr {
 }
 
 /* Style for links in the navigation */
-ul li a {
+a {
     text-decoration: none; /* Remove underline */
-    color: #00a2ff; /* Change link color */
+    color: #034694; /* Change link color */
     font-weight: bold; /* Add some weight to the font */
 }
 
