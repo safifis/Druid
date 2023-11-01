@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
 }
 
@@ -73,6 +73,15 @@ h2 {
     margin-bottom: 1.2rem;
 }
 
+#sub-header {
+    font-size: 20px;
+    margin-bottom: 1.0rem;
+    color: #6B6B6B;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
 .article {
     padding-left: 25%;
     padding-right: 25%;
@@ -82,7 +91,7 @@ h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     line-height: 1.5;
-    font-family: Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 iframe {
