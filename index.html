@@ -28,11 +28,13 @@
                 <h1
                     id="xg-analysis-on-epl-2020-players-with-interactive-plots-do-players-with-higher-xg-difference-mean-they-are-better-shooters"
                 >
-                    XG Analysis on EPL 2020 players with interactive plots: do
-                    players with higher xG difference mean they are
-                    &quot;better&quot; shooters?
+                    XG Analysis on EPL 2020 players with interactive plots 
                 </h1>
-
+                <h2 
+                    id="sub-header" class="" data-selectable-paragraph=""
+                >
+                    Do players with higher xG difference mean they are &quot;better&quot; shooters?
+                </h2>
                 <p>
                     <strong>Authors:</strong> Zhanmo Ni, Pu Xiao, Zhening Zhang
                 </p>
@@ -183,7 +185,14 @@
                     variable while avoiding issues associated with
                     multicollinearity and model complexity.
                 </p>
-                <!-- INSERT something: something -->
+                <!-- INSERT summary plot in step 1 -->
+                <div class="displayimages">
+                    <img
+                        src="charts/s1_best_subset_regression.png"
+                        width="400px"
+                        height="400px"
+                    />
+                </div>
 
                 <p>
                     The results obtained from the best subset regression
@@ -203,7 +212,14 @@
                     provides valuable insights into the outcome. Details about
                     the model with the lowest BIC are demonstrated below.
                 </p>
-                <!-- INSERT something: something -->
+                <!-- INSERT linear regression summary table in step 1 -->
+                <div class="displayimages">
+                    <img
+                        src="charts/s1_lm_summary.png"
+                        width="400px"
+                        height="400px"
+                    />
+                </div>
 
                 <p>
                     Based on the results shown above, we observed a negative
@@ -567,6 +583,19 @@
                     limited sample size. <br />
                 </p>
                 <p>
+                    In addition, given that feature ratings from FIFA are not the 
+                    best and most accurate measurement of a player’s skills, we 
+                    perform the same exploratory analyses on FM 2020 (Football 
+                    Manager 2020 Sports Interactive) player data (<a
+                        href="https://www.kaggle.com/datasets/ktyptorio/football-manager-2020"
+                        >Link to FM 2020 data</a
+                    >). There is no significant association found between FM 2020 
+                    players’ finishing skill ratings and the npxG_diff. Despite that 
+                    we replicated what we found in another dataset, both FIFA and FM 
+                    ratings may not reflect the player’s skill set accurately and 
+                    a player’s skills are more complicated than numbers from the games.
+                </p>
+                <p>
                     Another potential direction to further explore is: what if
                     the same player plays in a different position? Does it
                     affect its xG value? Those are some interesting questions we
@@ -612,7 +641,7 @@
                     >
                 </p>
 
-                <p><strong>Last Edit</strong>: 08/07/2023</p>
+                <p><strong>Last Edit</strong>: 08/23/2023</p>
             </div>
 
             <p><a id="about"></a></p>
