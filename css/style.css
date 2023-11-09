@@ -100,7 +100,8 @@ h2 {
     margin-bottom: 1rem;
     line-height: 32px;
     /* change it from 1.5 to 32px by Zhening 11/07/2023 */
-    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times,
+        serif;
     color: #242424;
 }
 
@@ -162,6 +163,14 @@ a {
 /* Change link color on hover */
 a:hover {
     color: #555;
+}
+
+.github-whole {
+    display: flex;
+}
+
+.github-whole-link {
+    margin: 20px;
 }
 
 /* Author Section */
